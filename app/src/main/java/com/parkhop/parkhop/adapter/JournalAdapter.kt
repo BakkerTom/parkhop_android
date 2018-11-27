@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import com.parkhop.parkhop.R
 import com.parkhop.parkhop.inflate
 import com.parkhop.parkhop.model.JournalEntry
+import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.journal_item.view.*
 
 class JournalAdapter(private val journalEntries: List<JournalEntry>) : RecyclerView.Adapter<JournalAdapter.JournalEntryHolder>() {
@@ -39,6 +40,7 @@ class JournalAdapter(private val journalEntries: List<JournalEntry>) : RecyclerV
             this.journalEntry = journalEntry
             view.nameView.text = journalEntry.rideName
             view.parkView.text = journalEntry.parkName
+            Picasso.get().load("https://programmerenissexy.nl" + journalEntry.thumbnailUrl).into(view.thumbnailView)
         }
 
         companion object {

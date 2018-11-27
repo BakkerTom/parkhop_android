@@ -7,7 +7,7 @@
 android:padding="16dp">
 
     <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
-                  android:orientation="horizontal" android:gravity="center" android:background="#efefef" android:padding="8dp">
+                  android:orientation="horizontal" android:gravity="center" android:background="#f5f5f5" android:padding="8dp">
 
         <ImageView
                 android:layout_width="64dp"
@@ -20,17 +20,24 @@ android:padding="16dp">
                 android:layout_height="wrap_content" android:layout_weight="1">
             <TextView
                     android:text="TextView"
+                    android:textSize="21sp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" android:id="@+id/rideTextView"/>
             <TextView
                     android:text="TextView"
+                    android:textSize="16sp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" android:id="@+id/parkTextView"/>
         </LinearLayout>
 
     </LinearLayout>
+
     <Button
             android:text="Add to Journal"
+            android:textSize="16sp"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorAccent"
+            android:layout_marginTop="24dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" android:id="@+id/addToJournalButton"/>
 

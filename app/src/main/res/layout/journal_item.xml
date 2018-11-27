@@ -2,7 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               xmlns:tools="http://schemas.android.com/tools"
               android:orientation="horizontal"
-              android:padding="8dp"
+              android:paddingHorizontal="16dp"
+              android:paddingVertical="8dp"
               android:layout_width="match_parent"
               android:layout_height="wrap_content">
   <ImageView
@@ -10,7 +11,8 @@
       android:layout_height="64dp"
       tools:src="@tools:sample/avatars"
       android:layout_marginRight="16dp"
-      android:id="@+id/thumbnailView"/>
+      android:id="@+id/thumbnailView"
+      android:background="@drawable/rounded_corner"/>
   <LinearLayout
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
@@ -20,13 +22,13 @@
         android:id="@+id/nameView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="21dp"
+        android:textSize="21sp"
         tools:text="@tools:sample/lorem[3]" />
     <TextView
         android:id="@+id/parkView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="16dp"
+        android:textSize="16sp"
         tools:text="@tools:sample/lorem[4]" />
   </LinearLayout>
 </LinearLayout>

@@ -17,6 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
-            app:menu="@menu/navigation" />
+            app:menu="@menu/navigation"
+            android:background="@android:color/white"/>
 
 </android.support.design.widget.CoordinatorLayout>
